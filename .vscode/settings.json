@@ -60,5 +60,6 @@
         ]
       }
     }
-  ]
+  ],
+  "prettier.trailingComma": "all"
 }
