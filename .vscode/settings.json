@@ -1,3 +1,14 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "prettier.bracesSpacing": false,
+  "prettier.arrayExpand": true,
+  "prettier.bracketSpacing": false,
+  "prettier.breakBeforeElse": true,
+  "propTypes.semicolon": false,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single"
 }
