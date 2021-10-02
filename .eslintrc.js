@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -19,12 +19,12 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 12,
     project: './tsconfig.json',
     sourceType: 'module',
-    tsconfigRootDir: __dirname
+    tsconfigRootDir: __dirname,
   },
   plugins: [
     'react',
@@ -32,7 +32,7 @@ module.exports = {
     'import',
     'jsx-a11y',
     'react',
-    'react-hooks'
+    'react-hooks',
   ],
   root: true,
   rules: {
@@ -42,22 +42,22 @@ module.exports = {
       'error',
       'always',
       {
-        exceptAfterSingleLine: true
-      }
+        exceptAfterSingleLine: true,
+      },
     ],
     'no-void': [
       'error',
       {
-        allowAsStatement: true
-      }
+        allowAsStatement: true,
+      },
     ],
     'padding-line-between-statements': [
       'error',
       {
         blankLine: 'always',
         prev: '*',
-        next: 'return'
-      }
+        next: 'return',
+      },
     ],
     '@typescript-eslint/no-unused-vars': [
       'error',
@@ -66,8 +66,8 @@ module.exports = {
         args: 'after-used',
         argsIgnorePattern: '_',
         ignoreRestSiblings: false,
-        varsIgnorePattern: '_'
-      }
+        varsIgnorePattern: '_',
+      },
     ],
     'import/extensions': [
       'error',
@@ -76,38 +76,38 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
     'react/jsx-filename-extension': [
       'error',
       {
-        extensions: ['.jsx', '.tsx']
-      }
+        extensions: ['.jsx', '.tsx'],
+      },
     ],
     'react/jsx-props-no-spreading': [
       'error',
       {
         html: 'enforce',
         custom: 'enforce',
-        explicitSpread: 'ignore'
-      }
+        explicitSpread: 'ignore',
+      },
     ],
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
   },
   overrides: [
     {
       files: ['*.tsx'],
       rules: {
-        'react/prop-types': 'off'
-      }
-    }
+        'react/prop-types': 'off',
+      },
+    },
   ],
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src']
-      }
-    }
-  }
+        paths: ['src'],
+      },
+    },
+  },
 }
