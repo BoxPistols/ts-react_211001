@@ -24,7 +24,7 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "remimarsal.prettier-now"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "eslint.codeActionsOnSave.mode": "problems",
   "js-codeformer.useSemicolons": true,
@@ -61,5 +61,4 @@
       }
     }
   ],
-  "prettier.trailingComma": "all"
 }
