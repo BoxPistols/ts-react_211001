@@ -2,13 +2,41 @@
   "prettier.useTabs": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
-  "prettier.bracesSpacing": false,
-  "prettier.arrayExpand": true,
-  "prettier.bracketSpacing": false,
-  "prettier.breakBeforeElse": true,
-  "propTypes.semicolon": false,
   "prettier.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "eslint.format.enable": true
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "[graphql]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "remimarsal.prettier-now"
+  },
+  "eslint.codeActionsOnSave.mode": "problems",
+  "js-codeformer.useSemicolons": true,
+  "propTypes.semicolon": true,
+  "terminal.integrated.env.linux": {},
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "prettier.alignObjectProperties": true,
+  "prettier.arrowParens": false,
+  "prettier.autoScroll": false,
+  "prettier.breakProperty": true,
+  "prettier.flattenTernaries": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.spaceBeforeFunctionParen": true,
+  "prettier.trailingComma": "all"
 }
