@@ -10,5 +10,7 @@
   "prettier.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "./node_modules/typescript/lib"
 }
