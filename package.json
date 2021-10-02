@@ -62,5 +62,22 @@
     "stylelint-config-recess-order": "^2.5.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx}": [
+        "prettier --write --loglevel=warn",
+        "eslint --fix"
+      ],
+      "src/**/*.css": [
+        "stylelint --fix"
+      ],
+      "src/**/*.{gql,graphql,json}": [
+        "prettier --write --loglevel=warn"
+      ]
+    }
   }
 }
