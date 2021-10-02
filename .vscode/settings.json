@@ -38,5 +38,8 @@
   "prettier.flattenTernaries": true,
   "prettier.jsxSingleQuote": true,
   "prettier.spaceBeforeFunctionParen": true,
-  "prettier.trailingComma": "all"
+  "prettier.trailingComma": "all",
+  "[css]": {
+    "editor.defaultFormatter": "remimarsal.prettier-now"
+  }
 }
