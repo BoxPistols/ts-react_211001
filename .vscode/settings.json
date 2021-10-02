@@ -16,7 +16,8 @@
     "editor.formatOnSave": false
   },
   "[json]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[typescript]": {
     "editor.formatOnSave": false
@@ -38,5 +39,27 @@
   "prettier.flattenTernaries": true,
   "prettier.jsxSingleQuote": true,
   "prettier.spaceBeforeFunctionParen": true,
+  "prettier.trailingComma": "all",
+  "[css]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "grammarly.overrides": [
+    {
+      "files": [
+        "**/package.json"
+      ],
+      "config": {
+        "audience": "general",
+        "dialect": "american",
+        "domain": "creative",
+        "emotions": [
+          "neutral"
+        ],
+        "goals": [
+          "inform"
+        ]
+      }
+    }
+  ],
   "prettier.trailingComma": "all"
 }
