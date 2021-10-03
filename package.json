@@ -2,6 +2,7 @@
   "name": "ts-react_211001",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://boxpistols.github.io/ts-react_211001/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -19,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "fix": "npm run -s format && npm run -s lint:fix",
@@ -57,6 +59,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-react": "^7.21.5",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "^2.5.0",
