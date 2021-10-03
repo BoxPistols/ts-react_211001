@@ -41,7 +41,7 @@
   "prettier.spaceBeforeFunctionParen": true,
   "prettier.trailingComma": "all",
   "[css]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "remimarsal.prettier-now"
   },
   "grammarly.overrides": [
     {

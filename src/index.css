@@ -1,3 +1,7 @@
+@import 'https: //unpkg.com/sanitize.css';
+@import 'https: //unpkg.com/sanitize.css/typography.css';
+@import 'https: //unpkg.com/sanitize.css/forms.css';
+
 body {
   margin: 0;
   font-family:
@@ -24,4 +28,8 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+li {
+  list-style: none;
 }
