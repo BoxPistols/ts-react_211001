@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Test from './components/Test';
+import Counter  from './components/Counter';
 import App from './App';
 import './css/App.css';
 
@@ -11,18 +11,18 @@ ReactDOM.render(
       <nav>
         <ul>
           <li>
-            <Link to="/test">test</Link>
+            <Link to="/counter">Counter</Link>
           </li>
           <li>
-            <Link to="/app">app</Link>
+            <Link to="/app">Chara</Link>
           </li>
         </ul>
       </nav>
 
       <p className="tx-c">Hello TS React</p>
 
-      <Route exact path="/test">
-        <Test />
+      <Route exact path="/counter">
+        <Counter />
       </Route>
 
       <Route exact path="/app">
