@@ -1,9 +1,11 @@
 module.exports = {
   env:
-    {
-      browser: true,
-      es2021: true,
-    },
+  {
+    browser: true,
+    es2021: true,
+    // TODO: 入れてみたが、効果は不明
+    node: true,
+  },
   extends:
     [
       'plugin:react/recommended',
@@ -20,16 +22,16 @@ module.exports = {
     ],
   parser: '@typescript-eslint/parser',
   parserOptions:
+  {
+    ecmaFeatures:
     {
-      ecmaFeatures:
-        {
-          jsx: true,
-        },
-      ecmaVersion: 12,
-      project: './tsconfig.json',
-      sourceType: 'module',
-      tsconfigRootDir: __dirname,
+      jsx: true,
     },
+    ecmaVersion: 12,
+    project: './tsconfig.json',
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
+  },
   plugins:
     [
       'react',
@@ -42,90 +44,91 @@ module.exports = {
     ],
   root: true,
   rules:
-    {
-      'no-use-before-define': 'off',
-      '@typescript-eslint/no-use-before-define':
-        [
-          'error',
-        ],
-      'lines-between-class-members':
-        [
-          'error',
-          'always',
-          {
-            exceptAfterSingleLine: true,
-          },
-        ],
-      'no-void':
-        [
-          'error',
-          {
-            allowAsStatement: true,
-          },
-        ],
-      'padding-line-between-statements':
-        [
-          'error',
-          {
-            blankLine: 'always',
-            prev: '*',
-            next: 'return',
-          },
-        ],
-      '@typescript-eslint/no-unused-vars':
-        [
-          'error',
-          {
-            vars: 'all',
-            args: 'after-used',
-            argsIgnorePattern: '_',
-            ignoreRestSiblings: false,
-            varsIgnorePattern: '_',
-          },
-        ],
-      'import/extensions':
-        [
-          'error',
-          'ignorePackages',
-          {
-            js: 'never',
-            jsx: 'never',
-            ts: 'never',
-            tsx: 'never',
-          },
-        ],
-      'react/jsx-filename-extension':
-        [
-          'error',
-          {
-            extensions:
-              [
-                '.jsx',
-                '.tsx',
-              ],
-          },
-        ],
-      'react/jsx-props-no-spreading':
-        [
-          'error',
-          {
-            html: 'enforce',
-            custom: 'enforce',
-            explicitSpread: 'ignore',
-          },
-        ],
-      'react/react-in-jsx-scope': 'off',
+  {
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define':
+      [
+        'error',
+      ],
+    'lines-between-class-members':
+      [
+        'error',
+        'always',
+        {
+          exceptAfterSingleLine: true,
+        },
+      ],
+    'no-void':
+      [
+        'error',
+        {
+          allowAsStatement: true,
+        },
+      ],
+    'padding-line-between-statements':
+      [
+        'error',
+        {
+          blankLine: 'always',
+          prev: '*',
+          next: 'return',
+        },
+      ],
+    '@typescript-eslint/no-unused-vars':
+      [
+        /* ***** TODO: 判定が厳しいので一旦外す error -> off ***** */
+        'off',
+        {
+          vars: 'all',
+          args: 'after-used',
+          argsIgnorePattern: '_',
+          ignoreRestSiblings: false,
+          varsIgnorePattern: '_',
+        },
+      ],
+    'import/extensions':
+      [
+        'error',
+        'ignorePackages',
+        {
+          js: 'never',
+          jsx: 'never',
+          ts: 'never',
+          tsx: 'never',
+        },
+      ],
+    'react/jsx-filename-extension':
+      [
+        'error',
+        {
+          extensions:
+            [
+              '.jsx',
+              '.tsx',
+            ],
+        },
+      ],
+    'react/jsx-props-no-spreading':
+      [
+        'error',
+        {
+          html: 'enforce',
+          custom: 'enforce',
+          explicitSpread: 'ignore',
+        },
+      ],
+    'react/react-in-jsx-scope': 'off',
 
-      'prefer-arrow/prefer-arrow-functions':
-        [
-          'error',
-          {
-            disallowPrototype: true,
-            singleReturnOnly: false,
-            classPropertiesAllowed: false,
-          },
-        ],
-    },
+    'prefer-arrow/prefer-arrow-functions':
+      [
+        'error',
+        {
+          disallowPrototype: true,
+          singleReturnOnly: false,
+          classPropertiesAllowed: false,
+        },
+      ],
+  },
   overrides:
     [
       {
@@ -134,22 +137,22 @@ module.exports = {
             '*.tsx',
           ],
         rules:
-          {
-            'react/prop-types': 'off',
-          },
+        {
+          'react/prop-types': 'off',
+        },
       },
     ],
   settings:
+  {
+    'import/resolver':
     {
-      'import/resolver':
-        {
-          node:
-            {
-              paths:
-                [
-                  'src',
-                ],
-            },
-        },
+      node:
+      {
+        paths:
+          [
+            'src',
+          ],
+      },
     },
-};
+  },
+}

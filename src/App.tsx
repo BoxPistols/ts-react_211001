@@ -1,7 +1,7 @@
 import { FC } from 'react';
 // CharacterList.tsxより、コンポーネントと / オブジェクト配列型のimport <- 必要？
 import { CharacterList, Character } from './CharacterList';
-import './App.css';
+import './css/App.css';
 
 const App: FC = () => {
   const characters: Character[] = [
@@ -37,12 +37,12 @@ const App: FC = () => {
   ];
 
   return (
-    <div className="container App">
-      <header>
+    <>
+      <div className="container App">
         <h1>『某DUNK』登場人物</h1>
         <CharacterList school="ほげ高校" characters={characters} />
-      </header>
-    </div>
+      </div>
+    </>
   );
 };
 export default App;
