@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import ChildArea from './ChildArea';
 
 const Counter: FC = () => {
   // counter state
@@ -21,12 +22,12 @@ const Counter: FC = () => {
 
   // Open Toggle
   const onClickOpen = () => setOpen(!open);
-  console.log(open);
+  console.log(open); // TODO: Debug
 
   const data = [...Array(200).keys()];
-  console.log(data);
+  console.log(data); // TODO: Debug
   data.forEach(() => {
-    console.log('...');
+    console.log('...'); // TODO: Debug
   });
 
   return (
@@ -60,7 +61,7 @@ const Counter: FC = () => {
               >
                 View Child
               </button>
-              {/* <ChildArea open={open} /> */}
+              <ChildArea open={open} />
             </section>
           </div>
         </div>
