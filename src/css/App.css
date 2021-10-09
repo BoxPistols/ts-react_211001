@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+/* ===== Utility ===== */
+
+.tx-c {
+  text-align: center;
+}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+/* ===== global ===== */
+
+button {
+  margin: 8px;
+}
+
+/* =========== product ========== */
+
+/* ===== nav ===== */
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 0.3em;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+}
