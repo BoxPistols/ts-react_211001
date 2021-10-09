@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.tx-c {
+  text-align: center;
+}
+
+a {
+  color: tomato;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== nav ===== */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 .3em;
+  font-size: 2em;
+}
