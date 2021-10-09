@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Counter  from './components/Counter';
+import Counter from './components/Counter';
 import App from './App';
 import './css/App.css';
 
