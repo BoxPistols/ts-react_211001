@@ -19,6 +19,9 @@ button {
   margin: 8px;
 }
 
+ul li {
+  list-style: none;
+}
 /* =========== product ========== */
 
 /* ===== nav ===== */
