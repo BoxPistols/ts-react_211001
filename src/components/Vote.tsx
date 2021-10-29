@@ -22,9 +22,15 @@ const Vote: FC = () => {
   /* きのこの追加 */
   const addItem = () => {
     const newItem = {
+      // name: Math.random() > 0.5 ? 'きのこ' : 'たけのこ',
       name: Math.random() > 0.5 ? 'きのこ' : 'たけのこ',
     };
     setItems([...items, newItem]);
+  };
+
+  /* 削除機能 */
+  const delItem = (index: number) => {
+    setItems(items.filter((_, i) => i !== index));
   };
 
   return (
@@ -45,9 +51,13 @@ const Vote: FC = () => {
                 </button>
                 <p>きのこ: {vote.kinoko}</p>
                 <p>たけのこ: {vote.tekenoko}</p>
-                {/* <p>たけのこ: {items[0].name}</p> */}
                 {items.map((item, index) => (
-                  <li key="item">{item.name}</li>
+                  <li key="index">
+                    {item.name}
+                    <button type="button" onClick={() => delItem(index)}>
+                      削除
+                    </button>
+                  </li>
                 ))}
               </section>
             </div>
