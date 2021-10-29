@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Counter from './components/Counter';
+import Vote from './components/Vote';
 import App from './App';
 import './css/App.css';
 
@@ -16,6 +17,9 @@ ReactDOM.render(
           <li>
             <Link to="/app">Chara</Link>
           </li>
+          <li>
+            <Link to="/vote">Vote</Link>
+          </li>
         </ul>
       </nav>
 
@@ -27,6 +31,10 @@ ReactDOM.render(
 
       <Route exact path="/app">
         <App />
+      </Route>
+
+      <Route exact path="/vote">
+        <Vote />
       </Route>
     </BrowserRouter>
   </React.StrictMode>,

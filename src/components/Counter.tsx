@@ -22,12 +22,12 @@ const Counter: FC = () => {
 
   // Open Toggle
   const onClickOpen = () => setOpen(!open);
-  console.log(open); // TODO: Debug
+  // console.log(open); // TODO: Debug
 
   const data = [...Array(200).keys()];
-  console.log(data); // TODO: Debug
+  // console.log(data); // TODO: Debug
   data.forEach(() => {
-    console.log('...'); // TODO: Debug
+    // console.log('...'); // TODO: Debug
   });
 
   return (
@@ -49,7 +49,7 @@ const Counter: FC = () => {
           </div>
         </div>
         <div className="row">
-          <div className="column column-80">
+          <div className="column column-90">
             <section className="section">
               {/* Form */}
               {text}
