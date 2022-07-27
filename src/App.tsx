@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import { FC } from 'react'
 // CharacterList.tsxより、コンポーネントと / オブジェクト配列型のimport <- 必要？
-import { CharacterList, Character } from './CharacterList';
-import './css/App.css';
+import { CharacterList, Character } from './CharacterList'
+import './css/App.css'
 
 const App: FC = () => {
   const characters: Character[] = [
@@ -34,15 +34,15 @@ const App: FC = () => {
       grade: 3,
       height: 197,
     },
-  ];
+  ]
 
   return (
     <>
-      <div className="container App">
+      <div className='container App'>
         <h1>『某DUNK』登場人物</h1>
-        <CharacterList school="ほげ高校" characters={characters} />
+        <CharacterList school='ほげ高校' characters={characters} />
       </div>
     </>
-  );
-};
-export default App;
+  )
+}
+export default App

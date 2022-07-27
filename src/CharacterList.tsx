@@ -1,20 +1,20 @@
 // 人物のパラメータの型
 export type Character = {
-  id: number;
-  name: string;
-  grade: number;
-  height?: number; // undefindの許容 -> 三項演算子
-};
+  id: number
+  name: string
+  grade: number
+  height?: number // undefindの許容 -> 三項演算子
+}
 
 // ※Propsの型
 type Props = {
-  school?: string;
-  characters: Character[]; // オブジェクト配列型 -> map
-};
+  school?: string
+  characters: Character[] // オブジェクト配列型 -> map
+}
 
 export const CharacterList: React.FC<Props> = (props) => {
   // propsの明示宣言 = CharacterListコンポーネントで親が指定する値
-  const { school, characters } = props;
+  const { school, characters } = props
 
   return (
     <>
@@ -34,5 +34,5 @@ export const CharacterList: React.FC<Props> = (props) => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
