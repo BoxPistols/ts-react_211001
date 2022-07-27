@@ -1,9 +1,4 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#55b1b9",
-    "titleBar.activeBackground": "#55b1b9",
-    "titleBar.activeForeground": "#FCF9F8"
-  },
   "prettier.useTabs": false,
   "prettier.tabWidth": 2,
   "prettier.printWidth": 80,
@@ -12,24 +7,24 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.tsdk": "./node_modules/typescript/lib",
   "[graphql]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[typescript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.codeActionsOnSave.mode": "problems",
   "js-codeformer.useSemicolons": true,
@@ -50,20 +45,15 @@
   },
   "grammarly.overrides": [
     {
-      "files": [
-        "**/package.json"
-      ],
+      "files": ["**/package.json"],
       "config": {
         "audience": "general",
         "dialect": "american",
         "domain": "creative",
-        "emotions": [
-          "neutral"
-        ],
-        "goals": [
-          "inform"
-        ]
+        "emotions": ["neutral"],
+        "goals": ["inform"]
       }
     }
   ],
+  "editor.formatOnSave": true
 }
